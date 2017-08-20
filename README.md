@@ -1,1 +1,0 @@
-# Karma token contract
