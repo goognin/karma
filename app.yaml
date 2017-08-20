@@ -3,4 +3,4 @@ api_version: 1
 
 handlers:
 - url: /.*
-  script: helloworld.php
+  script: index.php
