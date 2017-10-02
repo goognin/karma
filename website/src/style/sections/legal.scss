@@ -1,0 +1,40 @@
+.legal{
+	background-color: rgba(#000,.05);
+	padding: 80px 0;
+	&__title{
+		margin-bottom: 20px;
+	}
+	&__desc{
+		margin-bottom: 60px;
+		font-size: 24px;
+		font-weight: 500;
+		color: $red;
+		text-align: center;
+	}
+	&__pic{
+		display: block;
+		height: 300px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+		@include phones{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__bottom-text{
+		display: flex;
+		justify-content: space-between;
+		@include tablet{
+			display: block;
+		}
+	}
+	&__left,&__right{
+		width: 48%;
+		font-size: 14px;
+		color: $black;
+		line-height: 25px;
+		@include tablet{
+			width: auto;
+		}
+	}
+}

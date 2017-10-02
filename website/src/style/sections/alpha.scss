@@ -1,0 +1,64 @@
+.alpha{
+	color: $black;
+	margin-top: 120px;
+	@include phones{
+		margin-top: 80px;
+	}
+	&__title{
+		margin-bottom: 20px;
+	}
+	&__text{
+		opacity: 0.5;	
+		color: #090E16;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	&__main{
+		display: flex;
+		justify-content: space-between;
+		@include tablet{
+			display: block;
+		}
+		&-left{
+			width: 60%;
+			img{
+				width: 100%;
+				object-fit: contain;
+			}
+			@include tablet{
+				width: 100%;
+			}
+		}
+		&-right{
+			width: 40%;
+			@include tablet{
+				width: 100%;
+				text-align: center;
+			}
+		}
+		&-title{
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 25px;
+			font-weight: 500;
+			@include tablet{
+				text-align: center;
+			}
+
+		}
+		&-desc{
+			opacity: .5;
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 20px;
+			@include tablet{
+				text-align: left;
+			}
+		}
+		&-btn{
+			@include tablet{
+				margin-left: auto;
+			}
+		}
+	}
+}

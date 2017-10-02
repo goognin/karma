@@ -1,0 +1,167 @@
+.interviews{
+	position: relative;
+	padding-top: 60px;
+	&__title{
+		margin-bottom: 50px;
+	}
+	&__list{
+		width: auto;
+		list-style: none;
+		display: flex;
+		height: 450px;
+		.slick-list{
+		    padding-left: 20px;
+		}
+		&-wrap{
+			position: relative;
+			// padding-left: 40px;
+			margin-left: calc( ( 100vw - 1070px ) / 2 );
+
+			@include desktop{
+				margin-left: calc( ( 100vw - 70% ) / 2 );
+			}
+			@include phones{
+				// margin-left: 40px;
+				margin-left: 20px;
+			}
+		}
+		&-arrow{
+			width: 36px;
+			height: 90px;
+			position: absolute;
+			cursor: pointer;
+			z-index: 10;
+			top: calc(50% - 15px);
+			left: 85%;
+			transform: translate(0,-50%) rotate(-180deg);
+			@include phones{
+				left: 92%;
+				top: calc(50% - 15px);
+			}
+			&.arrow-prev{
+				left: -50px;
+				transform: translate(0,-50%);
+				@include tablet{
+					left: -10%
+				}
+				@include phones{
+					left: -2%;
+					top: calc(50% - 15px);
+				}
+			}
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+			@include laptop{
+
+			}
+			@include phones{
+				// display: none!important;
+				width: 13px;
+				height: 36px;
+			}
+		}
+		@include laptop{
+			height: 350px;
+		}
+		@include tablet{
+			height: 270px;
+		}
+		@include phones{
+			height: 230px;
+		}
+	}
+	&__item{
+		width: 760px;
+		height: 420px;
+		position: relative;
+		box-shadow: 0 10px 24px 0 #A1A9B8;
+		margin-right: 40px;
+		// margin-left: 40px;
+		opacity: .5;
+		pointer-events: none;
+		&.slick-active{
+			opacity: 1;
+			pointer-events: auto;
+		}
+		&:first-child{
+			margin-left: 40px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@include laptop{
+			width: 460px;
+			height: 320px;
+		}
+		@include tablet{
+			width: 360px;
+			height: 240px;
+		}
+		@include phones{
+			width: 280px;
+			// width: 100%;
+			height: 200px;
+		}
+		@include phones-sm{
+			width: 250px;
+		}
+		&-link{
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 0;
+			height: 0;
+			border-top: 38px solid transparent;
+			border-left: 76px solid #fff;
+			border-bottom: 38px solid transparent;
+		}
+		&:hover{ 
+			.interviews__item-link{
+				border-left: 76px solid $red;
+			}
+		}
+	}
+	&__dots{
+		position: absolute;
+		left: 50%;
+		bottom: -40px;
+		transform: translate(-50%,0);
+		.slick-dots{
+			display: flex;
+			align-items:center;
+			list-style: none;
+			li{
+				margin-right: 15px;
+				&.slick-active{
+					.interviews__dot{
+						background-color: transparent;
+						border: 2px solid $red;
+						width: 18px;
+						height: 18px;
+					}
+				}
+			}
+		}
+	}
+	&__dot{
+		display: block;
+		width: 4px;
+		height: 4px;
+		cursor: pointer;
+		background-color: rgba($red,.5);
+		border-radius: 50%;
+		overflow: hidden;
+		transition: all .3s ease;
+		&:hover{
+			width: 9px;
+			height: 9px;
+			background-color: #090E16;
+		}
+	}
+}

@@ -1,0 +1,571 @@
+- var title = 'Karma. Economy Of Trust' 
+mixin svg (className, fileName)
+    svg(class=className)
+        use(xlink:href=`/assets/img/sprite.svg#${fileName}`)
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        //- link(rel='icon', type='image/png', href='assets/img/favicon/favicon-32x32.png', sizes='32x32')
+        //- link(rel='icon', type='image/png', href='assets/img/favicon/favicon-16x16.png', sizes='16x16')        
+        meta(name='theme-color', content='#ffffff')
+        meta(property='og:description', content='Blockchain p2p-interchange protocol. Crossborder p2p-lending and resource interchange')
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        //- favicon block start
+        link(rel='icon', type='image/png', href='./assets/img/karma-logo-round.png')
+        //- favicon block end
+        link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(rel='stylesheet' href='./assets/css/main.css')
+        script(src='./assets/js/foundation.js' defer)
+        script(src='./assets/js/app.min.js' defer)
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body        
+        .wrapper
+            header.header
+                .container
+                    a.header__logo(href="/")
+                    .header__mobile
+                        a.burger(href="#")
+                            span
+                            span
+                            span
+                    .header__wrap
+                        nav.header__nav
+                            a.header__nav-link(href="#papers") Papers
+                            a.header__nav-link(href="#whatis") What is Karma
+                            a.header__nav-link(href="#alpha") Alpha
+                            a.header__nav-link(href="#team")  Team
+                            a.header__nav-link(href="#press") Press
+                        .lang-switch__wrap        
+                            a.lang-switch__link.active(href="#") ENG
+                            .lang-switch__dropdown
+                                a.lang-switch__link(href="#") RU
+                                a.lang-switch__link(href="#") FR
+                                a.lang-switch__link(href="#") DE
+
+            .main-content
+                section.hero
+                    .container
+                        .hero__left
+                            .hero__title Karma
+                            .hero__text 
+                                | Economy Of Trust 
+                                br
+                                | Scoring and loans all over the world. 
+                                br
+                                | Any assets, interest rates and collateral.
+                        .hero__right
+                            .hero__right-wrap#beforestart.active
+                                .hero__timer
+                                    .hero__timer-title Token Sale will start in:
+                                    .hero__timer-time#timer
+                                        .hero__timer-days.hero__timer-num
+                                            .number 72:
+                                            .text Days
+                                        .hero__timer-hours.hero__timer-num 
+                                            .number 15:
+                                            .text Hours
+                                        .hero__timer-min.hero__timer-num 
+                                            .number 25:
+                                            .text Minutes
+                                        .hero__timer-sec.hero__timer-num 
+                                            .number 59
+                                            .text Seconds
+                                a.hero__get-btn.btn(href="#") Contribute now
+                            .hero__right-wrap#start.hide
+                                .hero__reach-counter
+                                    .reach-counter__title
+                                        span.reach-counter__now 5 
+                                        | of 
+                                        span.reach-counter__need 10M USD 
+                                        | reached
+                                    .reach-counter__line-wrap
+                                        .reach-counter__steps
+                                            .reach-counter__line-number#one
+                                                |1M
+                                                br
+                                                |50%
+                                                br
+                                                |Discount
+                                            .reach-counter__line-number#tree
+                                                |3M
+                                                br
+                                                |30%
+                                                br
+                                                |Discount
+                                            .reach-counter__line-number#six
+                                                |6M
+                                                br
+                                                |15%
+                                                br
+                                                |Discount
+                                            .reach-counter__line-number#ten
+                                                |10M
+                                        .reach-counter__line-white                 
+                                            .reach-counter__line-red(data-percent="50")
+                                //- a.hero__get-btn.btn(href="#") Contribute now
+                            .hero__right-wrap#finish.hide
+                                .hero__reach-counter
+                                        .reach-counter__title The token sale is Finished! Thanks everyone!
+                                        .reach-counter__line-wrap
+                                            .reach-counter__finish 10M USD RAISED
+                                            .reach-counter__line-white        
+                                                .reach-counter__line-red(data-percent="100")
+                include ../sections/_socials.pug
+                section.papers#papers
+                    .container
+                        .papers__title.base-title Papers
+                        .papers__text Read more about the project
+                        .papers__list
+                            a.papers__link(href="https://www.dropbox.com/s/5jo3fulniihby5q/Karma.Economy-Of-Trust.One-pager.v.3.0.RU.pdf?dl=0&raw=1" target="_blank")
+                                .papers__link-img
+                                    img(src="./assets/img/paper_one.jpg", alt="paper")
+                                .papers__link-type PDF 4.2Mb
+                                .papers__link-text One pager
+                            a.papers__link(href="https://www.dropbox.com/s/ipe9aem6t1y9tce/Karma.Economy-Of-Trust.v.7.RU.pdf?dl=0&raw=1" target="_blank")
+                                .papers__link-img
+                                    img(src="./assets/img/paper_two.jpg", alt="paper")
+                                .papers__link-type PDF 4.2Mb
+                                .papers__link-text Presentation
+                            a.papers__link(href="https://docs.google.com/document/d/1_HmkT5Hd_5Pawr7T_LRh_Xa4bxUXfKHmz5gHlshOdak/edit" target="_blank")
+                                .papers__link-img
+                                    img(src="./assets/img/paper_tree.jpg", alt="paper")
+                                .papers__link-type PDF 4.2Mb
+                                .papers__link-text White paper
+                section.economy
+                    .container
+                        .economy__title.base-title Economy Of Trust
+                        .economy__mission
+                            .economy__mission-title Our Mission:
+                            .economy__mission-text Create global community with high level of mutual trust
+                        ul.economy__list
+                            li.economy__item
+                                .economy__item-title Create a powerful impulse for entrepreneurship
+                                .economy__item-text Today SME's creating up to 90% working places among all private companies. Wherein, 90% of business-loans issued to large corporations. Karma solves the capital accessibility issue for SME.
+                            li.economy__item
+                                .economy__item-title Distribute capitals evenly across the world
+                                .economy__item-text Some countries have deposit interest rates as small as -0.75% or 0.1%, and loan interest rates starting just from 1%. More than 3 billion people live in countries with loan interest rates as high as 20-30%.
+                            li.economy__item
+                                .economy__item-title Create opportunity for direct resources interchange
+                                .economy__item-text 
+                                    | Karma is an ecosystem. 
+                                    br
+                                    | All participants work directly with each other. People can create lots of different types of relationships, and can decide for themselves which ones are effective and which are not. 
+                section.whatis#whatis
+                    .container
+                        .whatis__title.base-title What Is Karma?
+                        .whatis__text 
+                            | Global decentralized blockchain-platform, where people and companies 
+                            br
+                            |can interchange directly to each other
+                        .whatis__pic
+                section.interviews
+                        .interviews__title.base-title Interviews
+                        .interviews__list-wrap
+                            .interviews__list-arrow.arrow-prev
+                                include ../sections/_slider_arrow
+                            .interviews__list-arrow.arrow-next
+                                include ../sections/_slider_arrow
+                            ul.interviews__list
+                                li.interviews__item
+                                    iframe#ytplayer(width='100%', height='100%', src='https://www.youtube.com/embed/e93qaZ81Of8', frameborder='0', allowfullscreen='')
+                                    //- a.interviews__item-link(href="#")
+                                li.interviews__item
+                                    iframe(width='100%', height='100%', src='https://www.youtube.com/embed/GBhFBwOMYN0', frameborder='0', allowfullscreen='')  
+                                li.interviews__item
+                                    iframe(width='100%', height='100%', src='https://www.youtube.com/embed/abY6GHg2BKQ', frameborder='0', allowfullscreen='')
+                                li.interviews__item
+                                    iframe(width='100%', height='100%', src='https://www.youtube.com/embed/J8tx05HCYxg', frameborder='0', allowfullscreen='')
+                        .interviews__dots  
+
+
+                section.alpha#alpha
+                    .container
+                        .alpha__title.base-title Alpha-version
+                        .alpha__text We've managed our p2p-loans in offline mode for 5 years. Now we have a working blockchain Alpha.
+                        .alpha__main
+                            .alpha__main-left
+                                img(src="./assets/img/alpha_mac.png", alt="aplha version")
+                            .alpha__main-right
+                                .alpha__main-title Get a loan or allocate your money
+                                .alpha__main-desc 
+                                    | Aplha version of the Karma App provides p2p-lending in two types of the loan: 
+                                    br
+                                    | 1. Crypto-pawnshop. Get USD for BTC/ETH collateral.
+                                    br
+                                    | 2. SMEs zero collateral loans.
+                                //- a.alpha__main-btn.btn(href="#") Try Alpha
+                section.terms#terms
+                    .container
+                        .terms__title.base-title Token Sale Terms
+                        .terms__top
+                            .terms__top-item 
+                                .terms__top-item-title Target on crowdsale:
+                                .terms__top-item-text $ 10,000,000
+                            .terms__top-item 
+                                .terms__top-item-title Soft cap:
+                                .terms__top-item-text  $ 5,000,000
+                            .terms__top-item 
+                                .terms__top-item-title Total token supply:
+                                .terms__top-item-text  100,000,000 KRM
+                            .terms__top-item 
+                                .terms__top-item-title Token type:
+                                .terms__top-item-text ERC20
+                            .terms__top-item 
+                                .terms__top-item-title Purchase methods accepted:
+                                .terms__top-item-text BTC, ETH, USD
+                            .terms__top-item
+                                //- a.terms-btn.btn(href="") Get into the white list
+                        .terms__bottom 
+                            .terms__bottom-item
+                                .terms__bottom-item-graph
+                                    img(src="./assets/img/graph1.png", alt="graph")
+                                .terms__bottom-legend
+                                    .terms__bottom-legend-desc
+                                        .percent.red 25% 
+                                        span of tokens retained by Karma
+                                    .terms__bottom-legend-desc
+                                        .percent.orange 25% 
+                                        span
+                                            | are incentives for 
+                                            br
+                                            |  the ecosystem members 
+                                    .terms__bottom-legend-desc
+                                        .percent.yellow 50% 
+                                        span for sale
+                            .terms__bottom-item
+                                .terms__bottom-item-graph
+                                    img(src="./assets/img/graph2.png", alt="graph")
+                                .terms__bottom-legend
+                                    .terms__bottom-legend-desc 
+                                        .percent.red 50% 
+                                        span discount until first 1M raised
+                                    .terms__bottom-legend-desc 
+                                        .percent.orange 30% 
+                                        span until 3M raised  
+                                    .terms__bottom-legend-desc 
+                                        .percent.yellow 15% 
+                                        span until 6M raised
+                            .terms__bottom-item
+                                .terms__bottom-safe
+                                    .percent 100%
+                                    .percent-text Safe
+                                .terms__bottom-text 100% legal application tokens as a license. KYC for every token buyer to comply AML and CTF. Whitelisting until 26 November.
+                section.timeline
+                    .container
+                        .timeline__title.base-title Token Sale Timeline
+                        .timeline__list
+                            .timeline__item 
+                                .timeline__item-wrap
+                                    .timeline__item-title 
+                                        | 17 August
+                                        br
+                                        | Early bird presale
+                                    .timeline__item-text Presale successfully finished. 500k USD raised.        
+                            .timeline__item 
+                                .timeline__item-wrap
+                                    .timeline__item-title 
+                                        | 27-28 November
+                                        br
+                                        | White List Sale
+                                    .timeline__item-text Closed sale only for those who passed the KYC and got into the White List.       
+                            .timeline__item 
+                                .timeline__item-wrap
+                                    .timeline__item-title 
+                                        | 29 November
+                                        br
+                                        | Open Sale
+                                    .timeline__item-text Open sale of, if there will be any tokens left.
+                            .timeline__item 
+                                .timeline__item-wrap
+                                    .timeline__item-title 
+                                        | 15 December
+                                        br
+                                        | Token Distribution
+                                    .timeline__item-text We will send the tokens directly to all participants.
+                section.legal#legal
+                    .container
+                        .legal__title.base-title 100% Legal Token Sale
+                        .legal__desc Even for US and China residents
+                        img.legal__pic(src="./assets/img/legal_ico.png", alt="legal")
+                        .legal__bottom-text
+                            .legal__left 
+                                | Token sale contract will be an online-offer.
+                                br
+                                | From legal side Karma tokens will be the software access license.
+                                br
+                                | It can be sold, donated and even inherited.
+                                br
+                                | People can buy tokens even for the USD legally.
+                                br
+                                | Head Karma organisation will be non-profit.
+                                br
+                                | Whole legal construction will be implemented before the token sale.
+                                br
+                                | We will manage the KYC-procedures to meet the AML and CTF.
+                            .legal__right
+                                | US and China residents can participate in token sale.                                 
+                                | Only qualified US investors will be allowed.
+                                br
+                                |  
+                                br
+                                | Until the token sale started, all responsibility for the presale funds takes the London-registered Goodeast Consulting Ltd. (company number: 10596223). Presale funds are in the Multi-Sig wallet unlocked only by 3 of 4 signatures, 2 of them belongs to EU lawyers.
+                                br  
+                                |
+                                br
+
+                                | Karma team is publishing weekly reports on spending funds.
+                section.team#team
+                    .container
+                        .team__title.base-title The Team
+                        .team__text 10−15 years of experience in finance and IT. Public persons, sharing the ideas with community, we value our reputation.
+                        ul.team__list
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/george.jpg", alt="george")
+                                .team__item-name George Goognin
+                                .team__item-position Founder, Evangelist
+                                .team__item-desc IT-career since 2002, first IT-startup made in 2008. Ex-Chief Operating Officer in ADV web-integrator, TOP3 in Russia. Clients: MOEX, VTB, X5 Retail. Co-founder of digital business school RIK (more than 1000 students completed the courses). 2013 to 2016 — large e-commerce automation (Apple, Samsung, LEGO, Nike). Ph.D in Economy Math Models
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/laptev.jpg", alt="laptev")
+                                .team__item-name Artem Laptev
+                                .team__item-position Founder, Investment director
+                                .team__item-desc 
+                                    | Since 2010 has managed private p2p-investment fund for SME. 
+                                    br
+                                    | Developed own scoring strategy with stable and positive results More than 10 years of experience in portfolio management in financial industry: Troika Dialog, Sberbank, Ancor Invest. International CFA-certified financial analyst. 
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/boesing.jpg", alt="Boesing")
+                                .team__item-name Ronny Boesing
+                                .team__item-position Partner, Denmark
+                                .team__item-desc Founder of the World's First Decentralized Fintech Exchange OpenLedger, CoinsBank and OBITS. Official partner to multiple funds and exchanges in China. With his partner, Dan Larimer, Ronny is constantly developing the Graphene/BitShares ecosystem. Open Ledger is also a significant player at the global ICO promotion market.
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/shlemov.jpg", alt="shlemov")
+                                .team__item-name Michael Shlemov
+                                .team__item-position Mentor
+                                .team__item-desc IT-career since 2002, first IT-startup made in 2008. Ex-Chief Operating Officer in ADV web-integrator, TOP3 in Russia. Clients: MOEX, VTB, X5 Retail. Co-founder of digital business school RIK (more than 1000 students completed the courses). 2013 to 2016 — large e-commerce automation (Apple, Samsung, LEGO, Nike). Ph.D in Economy Math Models
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/svinarchuk.jpg", alt="Svinarchuk")
+                                .team__item-name Dan Svinarchuk
+                                .team__item-position Fintech advisor
+                                .team__item-desc MOEX IT-infrastructure architect. Designed the core of the MOEX trading system, managed dev team. High-load expert: MOEX core supports 140,000 transactions per second. 
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/itireleng.jpg", alt="Itireleng")
+                                .team__item-name Alakanani Itireleng
+                                .team__item-position Partner in Africa
+                                .team__item-desc PR Director at Humaniq. Runs SatoshiCentre, a blockchain hub in Africa, launching educational programs for children. Her journey with bitcoin started at 2012, and she is an international bitcoin influencer, having spoken at conferences in Amsterdam, South Africa, and Cote D'ivore.
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/zubairov.jpg", alt="")
+                                .team__item-name Rustem Zubairov
+                                .team__item-position Consulting partner
+                                .team__item-desc Deloitte hits BIG4 for a decades. Rustem is a department director, took part in project of crypto-currencies legalization in Kazakhstan
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/vakhitov.jpg", alt="vakhitov")
+                                .team__item-name Rustam Vakhitov
+                                .team__item-position Law partner, Netherlands
+                                .team__item-desc Department Director at International Tax Assosiates. Lives and works in Netherlands for 12 years. Expert in international law and taxes. Member of the international IFA Association. 
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/asare.jpg", alt="asare")
+                                .team__item-name Philip Agyei Asare
+                                .team__item-position Business partner, UK
+                                .team__item-desc MOEX IT-infrastructure architect. Designed the core of the MOEX trading system, managed dev team. High-load expert: MOEX core supports 140,000 transactions per second. 
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/Schnellereich.jpg", alt="Schnellereich")
+                                .team__item-name Dima Schnellereich
+                                .team__item-position Blockchain advisor
+                                .team__item-desc PR Director at Humaniq. Runs SatoshiCentre, a blockchain hub in Africa, launching educational programs for children. Her journey with bitcoin started at 2012, and she is an international bitcoin influencer, having spoken at conferences in Amsterdam, South Africa, and Cote D'ivore.
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/bah.png", alt="bah")
+                                .team__item-name Thierno Madiou Bah
+                                .team__item-position  Partner in Sierra Leone, Africa
+                                .team__item-desc Deloitte hits BIG4 for a decades. Rustem is a department director, took part in project of crypto-currencies legalization in Kazakhstan
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook 
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/afrika.png", alt="afrika")
+                                .team__item-name Philip Agyei Asare
+                                .team__item-position  Partner in Ghana, Africa
+                                .team__item-desc Department Director at International Tax Assosiates. Lives and works in Netherlands for 12 years. Expert in international law and taxes. Member of the international IFA Association. 
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/kornilov.png", alt="kornilov")
+                                .team__item-name Tarlan Kornilov
+                                .team__item-position Law partner, Cyprus
+                                .team__item-desc Founder of the Elite Consulting law company. Specialisation: capital hedging, international financial deals, organisation of international corporate collaboration. Has an LLM Cambridge University degree, Strategic Negotiations Yale School of Management certificate
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/myshinsky.png", alt="myshinsky")
+                                .team__item-name Yuri Myshinsky
+                                .team__item-position Fund Relationships Executive
+                                .team__item-desc Director of the Government Development Corporation of the Chuvash Republic. Expertised in fundraising dozens of millions of dollars for the infrastructure, financial and IT-projects. 15 years of experience in Business Consulting, fintech, fund and government relationships.
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/boev.png", alt="boev")
+                                .team__item-name Evgeny Boev
+                                .team__item-position GR partner
+                                .team__item-desc Executive manager at the Russian Union of Industrialists and Entrepreneurs committee on International Partnership. 6 years at Central Bank of Russia, illegal money traffic monitoring. More than a 10 years of GR experience in project finance and public communications.
+                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                        button.team__showmore-btn Show more
+
+                             
+                section.partners#partners
+                    .container
+                        .partners__title.base-title Partners
+                        ul.partners__list
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/rudex.png", alt="rudex")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic. 
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/graphenelab.png", alt="graphenelab")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic. 
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/bitshares.png", alt="bitshares")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/openledger.png", alt="openledger")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/openledger.png", alt="openledger")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/bitshares.png", alt="bitshares")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
+                            li.partners__item 
+                                .partners__item-logo 
+                                    img(src="./assets/img/partners/graphenelab.png", alt="graphenelab")
+                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
+
+
+
+                section.press#press
+                    .container
+                        .press__title.base-title Press
+                        ul.press__list
+                            li.press__item
+                                a.press__item-link(href="https://bitnovosti.com/lenta/comment-page-263/#comment-177272" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/bitnovosti.png", alt="bitnovosti")  
+                            li.press__item
+                                a.press__item-link(href="https://vk.com/pro.bitcoin?w=wall-103181398_21828" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/probitcoin.png", alt="probitcoin")   
+                            li.press__item
+                                a.press__item-link(href="https://bitcointalk.org/index.php?topic=2085967.0" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/bitcointalk.png", alt="bitcointalk")  
+                            li.press__item
+                                a.press__item-link(href="https://news.decenter.org/goognin/439" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/decentr.png", alt="decenter") 
+                            li.press__item
+                                a.press__item-link(href="https://forum.bitcoin.com/alternative-cryptocurrencies-altcoins/karma-economy-of-trust-p2p-interchange-protocol-t47810.html" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/bitcoincom.png", alt="bitcoincom") 
+                            li.press__item
+                                a.press__item-link(href="http://forklog.com/rossijskaya-platforma-karma-pozvolit-investoram-napryamuyu-kreditovat-biznes/" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/forklog.png", alt="forklog") 
+                            li.press__item
+                                a.press__item-link(href="http://www.coinfox.ru/novosti/7438-platforma-karma-investirovala-v-afrikanskij-blokchejn-servis-denezhnykh-perevodov-btc-ghana" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/coinfox.png", alt="coinfox")  
+                            li.press__item
+                                a.press__item-link(href="https://therunet.com/news/28943" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/therunet.png", alt="therunet")   
+                            li.press__item
+                                a.press__item-link(href="http://firrma.ru/data/news/70392/" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/firrma.png", alt="firrma")
+                            li.press__item
+                                a.press__item-link(href="http://www.cnews.ru/news/line/2017-08-16_platforma_p2pkreditovaniya_karma_vyhodit_na" target="_blank") 
+                                    img.press__item-logo(src="./assets/img/press/cnews.png", alt="cnews") 
+                            li.press__item
+                                a.press__item-link(href="http://telegra.ph/YUrij-Gugnin-Karma--ehto-prezhde-vsego-horoshaya-reputaciya-08-18" target="_blank" ) 
+                                    img.press__item-logo(src="./assets/img/press/cryptographlogo.png", alt="cryptograph") 
+                            li.press__item
+                                a.press__item-link(href="#" target="https://steemit.com/ico/@funcoin01/crypto-project-that-allows-investors-to-directly-lend-to-the-business-will-appear-in-russia") 
+                                    img.press__item-logo(src="./assets/img/press/steemit.png", alt="steemit") 
+                            li.press__item
+                                a.press__item-link(href="#" target="https://golos.io/ito/@goognin/kak-provesti-pre-ito-posredi-nochi-dlya-lyudei-bez-efirov-uvlekatelnaya-istoriya-o-poroge-vkhoda-v-kriptu") 
+                                    img.press__item-logo(src="./assets/img/press/golos.png", alt="golos") 
+
+                        .press__slider-wrap
+                            .press__slider-arrow.arrow-prev
+                                include ../sections/_slider_arrow
+                            .press__slider-arrow.arrow-next
+                                include ../sections/_slider_arrow
+                            .press__slider-dots
+                            .press__slider
+                                .press__slider-item
+                                    .press__slider-item-text EZ Texting has been very easy to work with...we had chosen another company and then found out they were having massive technical difficulties.
+                                    .press__slider-item-logo
+                                        img(src="./assets/img/press/therunet.png", alt="therunet") 
+                                .press__slider-item
+                                    .press__slider-item-text EZ Texting has been very easy to work with...we had chosen another company and then found out they were having massive technical difficulties.
+                                    .press__slider-item-logo
+                                        img(src="./assets/img/press/therunet.png", alt="therunet") 
+                                .press__slider-item
+                                    .press__slider-item-text EZ Texting has been very easy to work with...we had chosen another company and then found out they were having massive technical difficulties.
+                                    .press__slider-item-logo
+                                        img(src="./assets/img/press/therunet.png", alt="therunet") 
+                                
+                section.updates
+                    .container
+                        .updates__title Get updates about Karma
+                        form.updates__form#updates__form
+                            input.updates__form-input(type="email" placeholder="Your email" required)
+                            button.updates__form-submit(type='submit') Get updates
+                        .updates__text 
+                            | Filling the form above doesn't oblige you to anything. 
+                            br
+                            | We'll just add you to our mailing list.
+                include ../sections/_socials.pug
+            footer.footer
+                .container
+                    .footer__left
+                        .footer__adress
+                            .footer__adress-title Fund spending responsibility:
+                            .footer__adress-text 
+                                | Goodeast Consulting Ltd.
+                                br
+                                | company number: 10596223
+                                br
+                                | Suite 1, 5 Percy Street, Fitzrovia, London, United Kingdom, W1T 1DG
+                        .footer__photo
+                            span.footer__photo-title Photo by: 
+                            a.footer__photo-link(href="#") Nathaniel Tetteh 
+                        .footer__copyright © Karma DAO, 2017 
+
+                    .footer__right
+                        .footer__disclaimer
+                            .footer__disclaimer-title Disclaimer: 
+                            .footer__disclaimer-text
+                                | Nothing contained in the Site constitutes investment, legal or tax advice. Neither the information nor any opinion contained in the Site constitutes a solicitation or an offer to buy or sell any securities, futures, options or other financial instruments. Decisions based on information contained on this site are the sole responsibility of the visitor.
+                                br
+                                | The materials in the Site are provided "AS IS" and without warranties of any kind (either express or implied). To the fullest extent permissible pursuant to applicable law, any and all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose, are disclaimed.

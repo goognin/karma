@@ -1,0 +1,35 @@
+
+//vars
+$gray: #090E16;
+$white: #fff;
+$red: #E62B1E;
+$black: #212A3A;
+$orange: #FF9033;
+$yellow: #FFE500;
+//mixins
+@import "common/mixins";
+//common
+@import "common/all";
+@import "common/header";
+@import "common/footer";
+//fonts
+@import "common/fonts";
+//sections
+@import "sections/hero";
+@import "sections/socials";
+@import "sections/papers";
+@import "sections/economy";
+@import "sections/whatis";
+@import "sections/interviews";
+@import "sections/alpha";
+@import "sections/terms";
+@import "sections/timeline";
+@import "sections/legal";
+@import "sections/team";
+@import "sections/partners";
+@import "sections/press";
+@import "sections/updates";
+@import "sections/whatis";
+//index page
+@import "sections/features";
+ 

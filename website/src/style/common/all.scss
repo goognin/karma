@@ -1,0 +1,92 @@
+html,body{
+    height: 100%;
+    width: 100%;    
+}
+body{	
+    line-height: 1.42;    
+    -webkit-font-smoothing: antialiased;
+    position: relative;    
+    font-family: "GothamPro";
+    font-weight: 400;  
+    font-size: 16px;     
+}
+*{
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+    outline: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+button, input{
+    font-family: 'GothamPro';    
+}
+.wrapper{
+    overflow: hidden;   
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: white; 
+    &.fixed{
+        width: 100vw;
+        height: 100vh;
+    }   
+}
+.main-content{  
+  flex: 1 0 auto;
+}
+.container{
+    margin: 0 auto;
+    width: 1070px; 
+    padding: 0 40px;
+    @include desktop{
+        width: 900px;
+    }
+    @include laptop{
+        width: 760px;
+    }
+    @include tablet{
+         width: 95%;
+    }
+    @include phones{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+.base-title{    
+    font-size: 60px;  
+    font-weight: bold;
+    text-align: center;
+    // @include phones{
+    //     font-size: 24px;
+    // }   
+    @include phones{
+        font-size: 42px;
+    }
+}
+.btn{
+    height: 40px;
+    border-radius: 6px; 
+    background-color: #E62B1E;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 14px;
+    &:hover{
+        border: 1px solid $red;
+        background-color: #fff;
+        color: $red;
+    }
+
+}
+
+.slick-disabled{
+    display: none!important;
+}
+#ytplayer.disabled{
+    pointer-events:none;
+}

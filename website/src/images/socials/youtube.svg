@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.502604167">
+        <g id="01_Tokensale_Karma_Web_1366px" transform="translate(-884.000000, -10679.000000)" fill-rule="nonzero" fill="#090E16">
+            <g id="Contacts" transform="translate(203.000000, 10676.000000)">
+                <path d="M700.615,3.18412519 C697.011,2.93812519 688.984,2.93912519 685.385,3.18412519 C681.488,3.45012519 681.029,5.80412519 681,12.0001252 C681.029,18.1851252 681.484,20.5491252 685.385,20.8161252 C688.985,21.0611252 697.011,21.0621252 700.615,20.8161252 C704.512,20.5501252 704.971,18.1961252 705,12.0001252 C704.971,5.81512519 704.516,3.45112519 700.615,3.18412519 Z M690,16.0001252 L690,8.00012519 L698,11.9931252 L690,16.0001252 L690,16.0001252 Z" id="youtube"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+.whatis{
+	color: $black;
+	@include tablet{
+		margin-bottom: 60px;
+	}
+	&__title{
+		margin-bottom: 10px;
+	}
+	&__text{
+		opacity: .5;
+		color: #090E16;
+		margin-bottom: 80px;
+		text-align: center;
+		line-height: 25px;
+		@include tablet{
+			margin-bottom: 40px;
+		}
+	}
+	&__pic{
+		height: 460px;
+		background: url('../img/whatis.png') no-repeat center;
+		background-size: contain;
+		@include tablet{
+			background: url('../img/whatis_mobile.jpg') no-repeat center;	
+			background-size: cover;
+			height: 700px;
+		}
+	}
+}

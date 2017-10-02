@@ -1,0 +1,175 @@
+.header{
+    position: absolute;
+    padding: 20px 0;
+    width: 100%;
+    .container{
+    	display: flex;
+    	justify-content: space-between;
+	    align-items: center;
+        @include laptop{
+            width: auto;
+        }
+    }
+    &__logo{
+    	height: 50px;
+    	width: 50px;
+    	border-radius: 50%;
+    	overflow: hidden;
+    	background: url('../img/karma-logo-round.png') no-repeat center;
+    	background-size: cover;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include laptop{
+            display: none;
+            position: fixed;
+            z-index: 50;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            overflow: hidden;
+            height: 100vh;
+            background: #000;
+            &.open{
+                display: flex;
+                flex-direction: column;
+                justify-content: normal;
+                align-items: center;
+                justify-content: center;
+                .header__nav{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0;                   
+                    &-link{
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                // .header__nav-link{
+                //     margin-right: 0;
+                //     margin-bottom: 20px;
+                // }
+            }
+        }
+    }
+    &__mobile{
+        display: none;
+        @include laptop{
+            display: block;
+        }
+        .burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 18px;
+            z-index: 100;
+            span{
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: 30px;
+                top: 0;
+                background-color: #fff;
+                transition: transform .3s ease;
+                &:nth-child(2){
+                    top: 8px;
+                }
+                &:nth-child(3){
+                    top: 16px;
+                }
+            }
+            &.open{
+                span{
+                    &:nth-child(1){
+                        top: 8px;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                         transform: rotate(-45deg);
+                         top: 8px;
+                    }
+                }
+            }
+        }
+    }
+    &__nav{
+        margin-right: 60px;
+    	&-link{
+    		color: #fff;
+    		font-weight: 500;
+    		text-decoration: none;
+    		margin-right: 30px;
+    		&:last-child{
+    			margin-right: 0;
+    		}
+    	}
+    }
+    .lang-switch{
+    	&__wrap{
+            position: relative;
+            &.open{
+                .lang-switch__link.active:after{
+                    transform: translate(0,-50%) rotate(-180deg);
+                }
+                .lang-switch__dropdown{
+                    display: block;
+                    @include laptop{
+                        background: transparent;
+                        position: static;
+                        width: auto;
+                        padding: 0;
+                        padding-top: 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
+        &__dropdown{
+            position: absolute;
+            left: -20px;
+            width: 260px;
+            display: none;
+            // background-color: #000000;
+            padding: 20px 20px 0;
+
+        }
+    	&__link{
+    		color: #fff;
+    		text-decoration: none;
+    		font-weight: 400;
+    		display: block;   
+            margin-bottom: 15px;
+            &.active{
+                margin-bottom: 0;
+                position: relative;
+                font-weight: 500;
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: -15px;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    transition: all .3s ease;
+                    width: 0;
+                    height: 0;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid $red;
+                    border-left: 5px solid transparent;
+                }
+                @include laptop{
+                    margin-right: 10px;
+                }
+            }
+     	}
+    }
+
+}

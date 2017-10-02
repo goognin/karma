@@ -1,0 +1,122 @@
+.terms{
+	margin-top: 120px;
+	color: $black;
+	@include phones{
+		margin-top: 60px;
+	}
+	&__title{
+		margin-bottom: 40px;
+	}
+	&__top{
+		display: flex;
+		flex-wrap: wrap;
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $black;
+			opacity: .5;
+			margin-bottom: 60px;
+		}
+		@include tablet{
+			display: block;
+			&:after{
+				display: none;
+			}
+		}
+		&-item{
+			width: 33%;
+		    // justify-content: space-between;
+		    text-align: center;
+		    margin-bottom: 60px;
+			&-title{
+				opacity: .5;
+				color: #090E16;
+				font-weight: 500;
+				line-height: 25px;
+			}
+			&-text{
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 25px;
+			}
+			@include tablet{
+				width: auto;
+			}
+		}
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		&-item{
+			width: 30%;
+			&-graph{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		}
+		@include tablet{
+			display: block;
+			&-item{
+				width: auto;
+				margin-bottom: 30px;
+			}
+		}
+		&-legend{
+			&-desc{
+				// display: flex;
+				margin-bottom: 6px;
+				.percent{
+					display: inline-block;
+					color: #fff;
+					border-radius: 6px;
+					padding: 0 4px;
+					font-size: 14px;
+					text-align: center;
+					font-weight: 500;
+					margin-right: 8px;
+				}
+				.red{
+					background-color: $red;
+				}
+				.orange{
+					background-color: $orange;
+				}
+				.yellow{
+					background-color: $yellow;
+					color: $black;
+				}
+
+			}
+		}
+		&-safe{
+			margin-bottom: 20px;
+			padding-top: 30px;
+			.percent{
+				font-size: 64px;
+				line-height: 61px;
+				font-weight: 300;
+				text-align: center;
+				color: #090E16;
+			}
+			.percent-text{
+				opacity: .5;
+				color: $black;
+				font-weight: 500;
+				text-align: center;
+			}
+		}
+		&-text{
+			font-size: 14px;
+			line-height: 25px;
+			color: #090E16; 
+		}
+	}
+	&-btn{
+		margin-top: 10px;
+		@include tablet{
+			margin-top: 0;
+		}
+	}
+}
