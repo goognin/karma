@@ -21,7 +21,8 @@ $(function() {
 		$('html , body').stop().animate({scrollTop: destination}, 400);
 	});
 	//hero tabs
-	$('#timer').countdown('2018/01/01 00:00:00', function(event) {
+	var data = $('#timer').data('date');
+	$('#timer').countdown(data, function(event) {
 	    $(this)
 	    .html(event.strftime('<div class="hero__timer-days hero__timer-num"><div class="number">%-D:</div><div class="text">Days</div></div><div class="hero__timer-hours hero__timer-num"><div class="number">%H:</div><div class="text">Hours</div></div><div class="hero__timer-min hero__timer-num"><div class="number">%M:</div><div class="text">Minutes</div></div><div class="hero__timer-sec hero__timer-num"><div class="number">%S</div><div class="text">Seconds</div></div>'
             ));
