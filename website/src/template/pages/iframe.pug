@@ -1,0 +1,34 @@
+// Begin MailChimp Signup Form
+link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css', rel='stylesheet', type='text/css')
+link(rel='stylesheet' href='./assets/css/main.css')
+style(type='text/css').
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  body{
+   margin: 0;
+  }
+  
+html
+  body
+    #mc_embed_signup.mfp-hide
+      //- a.close-btn(href="#")
+      form#mc-embedded-subscribe-form.validate(action='//red.us16.list-manage.com/subscribe/post?u=6fbc813d9fd3d1524d88d6451&id=38ac7f37c8', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+        #mc_embed_signup_scroll
+          h2.form__title Contribute now
+          .mc-field-group
+            input#mce-FNAME.required(type='text', value='', name='FNAME' placeholder='Name')
+          .mc-field-group
+            input#mce-EMAIL.required.email(type='email', value='', name='EMAIL' placeholder='Your email')
+          .mc-field-group
+            input#mce-MMERGE2.required(type='number', name='MMERGE2', value='' placeholder='Amount to buy in USD')
+          #mce-responses.clear
+            #mce-error-response.response(style='display:none')
+            #mce-success-response.response(style='display:none')
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          div(style='position: absolute; left: -5000px;', aria-hidden='true')
+            input(type='text', name='b_6fbc813d9fd3d1524d88d6451_38ac7f37c8', tabindex='-1', value='')
+          .clear
+            input#mc-embedded-subscribe.btn(type='submit', value='Contribute now', name='subscribe')
+    script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+    script(type='text/javascript').
+      (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='number';}(jQuery));var $mcj = jQuery.noConflict(true);
+    // End mc_embed_signup

@@ -15,8 +15,9 @@
 		text-align: center;
 		color: #090E16;
 		opacity: .5;
+		max-width: 580px;
+		margin: 0 auto;
 		margin-bottom: 60px;
-		max-height: 580px;
 	}
 	&__list{
 		list-style: none;
@@ -81,7 +82,7 @@
 			text-align: center;
 			padding: 4px 8px 2px;
 			&:hover{
-				background-color: $black;
+				background-color: #090f15;
 			}
 		}
 	}
@@ -92,7 +93,8 @@
 		border: 1px solid $black;
 		border-radius: 3px;
 		background-color: transparent;
-		padding: 8px 16px;
+		padding: 10px 60px 8px;
+		line-height: 1;
 		@include tablet{
 			display: inline-block;
 		}

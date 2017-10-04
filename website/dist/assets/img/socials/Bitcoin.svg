@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="24px" viewBox="0 0 18 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Bitcoin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.502604167">
+        <g id="01_Tokensale_Karma_Web_1366px" transform="translate(-775.000000, -10676.000000)" fill-rule="nonzero" fill="#090E16">
+            <g id="Contacts" transform="translate(203.000000, 10676.000000)">
+                <path d="M580,24 L580,20.978 L579,20.978 L579,24 L577,24 L577,20.978 L572.031,20.978 L572.531,18 L573.61,18 C574.494,18 575,17.149 575,16.293 L575,7.404 C575,6.571 574.515,6 573.635,6 L572,6 L572,3 L577,3 L577,0 L579,0 L579,3 L580,3 L580,0 L582,0 L582,3.053 C586.315,3.199 588.024,4.834 588.514,6.678 C589.094,8.858 587.657,10.688 586.421,11.134 C587.922,11.516 590,12.625 590,15.184 C590,18.667 587.312,21 582,21 L582,24 L580,24 Z M579,12.994 L579,18 C582.969,18 585.688,17.625 585.688,15.484 C585.688,13.188 582.75,12.994 579,12.994 Z M579,11 C581.211,11 584.578,10.844 584.578,8.5 C584.578,6.5 582.5,6 579,6 L579,11 Z" id="Bitcoin"></path>
+            </g>
+        </g>
+    </g>
+</svg>

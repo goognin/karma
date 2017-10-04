@@ -2,6 +2,10 @@
     position: absolute;
     padding: 20px 0;
     width: 100%;
+    &.black{
+        background-color: #090E16;
+        position: static;
+    }
     .container{
     	display: flex;
     	justify-content: space-between;
@@ -144,7 +148,7 @@
     	&__link{
     		color: #fff;
     		text-decoration: none;
-    		font-weight: 400;
+    		font-weight: 300;
     		display: block;   
             margin-bottom: 15px;
             &.active{

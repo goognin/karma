@@ -4,8 +4,8 @@
   "author": "Max Markov",
   "license": "ISC",
   "scripts": {
-   "start": "node app.js"
-    },
+    "start": "node app.js"
+  },
   "devDependencies": {
     "browser-sync": "~2.18.7",
     "del": "~2.2.2",
@@ -32,6 +32,7 @@
     "gulp-uglify": "^2.0.1",
     "gulp.spritesmith": "^6.3.0",
     "jquery": "~3.1.1",
+    "magnific-popup": "^1.1.0",
     "merge-stream": "^1.0.1",
     "normalize.css": "~5.0.0",
     "slick-carousel": "~1.6.0"

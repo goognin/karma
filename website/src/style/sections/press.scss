@@ -73,6 +73,7 @@
 		&-item{
 			position: relative;
 			padding: 0 30px;
+			font-weight: 500;
 			&-text{
 				margin-bottom: 30px;
 				font-size: 24px;
@@ -84,18 +85,19 @@
 				position: absolute;
 				height: 50px;
 				display: block;
-				top: 50%;
 				transform: translate(0,-50%);
 				background: url('../img/quote.svg') no-repeat center;
 				background-size: contain;
 				background-position: center;
 				}
 				&:before{
+					top: 50%;
 					left: -30px;
 				}
 				&:after{
+					top: 50%;
 					right: -30px;
-					transform: rotate(-180deg);
+					transform:  translate(0,-50%) rotate(-180deg);
 				}
 				
 			}

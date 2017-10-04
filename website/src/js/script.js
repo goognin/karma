@@ -79,12 +79,21 @@ $(function() {
 	
 	if ($(document).width()<=768) {
 		var teamList = $('.team__list'),
-			teamItems = teamList.find('.team__item');
+			teamItems = teamList.find('.team__item'),
+			featuresList = $('.features__list'),
+			featuresItems = featuresList.find('.features__item');
+
 			teamItems.toArray().forEach(function(item,i){
 				if(i>2){
 					$(item).hide().addClass('hide');
 				}
 			})
+			featuresItems.toArray().forEach(function(item,i){
+				if(i>4){
+					$(item).hide().addClass('hide');
+				}
+			})
+
 	}
 	$('.team__showmore-btn').on('click', function(e) {
 		e.preventDefault();
@@ -96,6 +105,43 @@ $(function() {
 			$(this).hide();
 		}
 	});	
+
+	$('.features__showmore-btn').on('click', function(e) {
+		e.preventDefault();
+		var featuredHideItems = featuresItems.filter(function(index) {
+			return $(this).hasClass('hide')
+		})
+			featuredHideItems.slice(0,5).removeClass('hide').show();
+		if(!featuredHideItems.length){
+			$(this).hide();
+		}
+	});	
+	$('.terms-btn, .hero__get-btn').on('click',  function(e) {
+		e.preventDefault();
+		$.magnificPopup.open({
+		  items: {
+		    src: '../../iframe.html'
+		  },
+		  type: 'iframe',
+		  iframe:{
+		  	markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe"  frameborder="0" allowfullscreen></iframe>'+
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+		  },
+		  showCloseBtn: false
+		  // fixedContentPos: false
+		});
+	});
+	// $('#mc_embed_signup').find('.close-btn').on('click', function(event) {
+	// 	event.preventDefault();
+	// 	$.magnificPopup.close();
+	// });
+	// $('#mc-embedded-subscribe-form').on('submit', function(event) {
+		
+	// 	$.magnificPopup.close();
+	// });
 	// $('#updates__form').on('submit', function(e) {
 	// 	e.preventDefault();
 	// 	var data = $(this).serialize();
@@ -108,6 +154,7 @@ $(function() {
 	// 		}
 	// 	});
 	// });
+
 
 });
 

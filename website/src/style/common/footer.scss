@@ -21,7 +21,7 @@
 	&__adress{
 		margin-bottom: 30px;
 		&-title{
-			
+			font-weight: 500;
 		}
 		&-text{
 			color: #A1A9B8;
@@ -29,10 +29,14 @@
 	}
 	&__photo{
 		margin-bottom: 30px;
+		font-weight: 500;
 		&-link{
 			color: $red;
 			text-decoration: none;
 		}
+	}
+	&__copyright{
+		font-weight: 500;
 	}
 	&__right{
 		width: 60%;
@@ -43,6 +47,7 @@
 	&__disclaimer{
 		&-title{
 			margin-bottom: 10px;
+			font-weight: 500;
 		}
 		&-text{
 			color: #A1A9B8;

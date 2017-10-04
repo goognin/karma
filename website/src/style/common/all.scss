@@ -59,6 +59,7 @@ button, input{
     font-size: 60px;  
     font-weight: bold;
     text-align: center;
+    color: $black;
     // @include phones{
     //     font-size: 24px;
     // }   
@@ -76,6 +77,7 @@ button, input{
     display: inline-block;
     text-decoration: none;
     padding: 8px 14px;
+    border: 1px solid transparent;
     &:hover{
         border: 1px solid $red;
         background-color: #fff;
@@ -83,10 +85,119 @@ button, input{
     }
 
 }
-
+#s
 .slick-disabled{
     display: none!important;
 }
 #ytplayer.disabled{
     pointer-events:none;
 }
+
+
+
+#mc_embed_signup {
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'GothamPro';
+    div.response{
+        width: 100%!important;
+    }
+    // .close-btn{
+    //     display: block;
+    //     background: url('../img/close.png') no-repeat center;
+    //     width: 25px;
+    //     height: 25px;
+    //     position: absolute;
+    //     right: 25px;
+    //     top: 30px;
+    //     z-index: 1;
+    // }
+    div#mce-responses{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+     #mce-success-response,#mce-error-response{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: rgba($gray,.5);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        a{
+            color: $red;
+            font-weight: 500;
+        }
+     }
+    #mc-embedded-subscribe-form{
+        padding: 0;
+        margin: 0;
+    }
+    .form__title{
+        font-family: 'GothamPro';    
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    div.mce_inline_error{
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .mc-field-group{
+        width: 100%!important;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+        min-height: 40px;
+        input{
+            border: 1px solid #A1A9B8;
+            font-size: 14px;
+            color: $black;
+            height: 40px;
+            padding-left: 10px!important;
+            &::placeholder{
+                color: rgba($gray,.5);
+            }
+        }
+    }
+}
+#mc-embedded-subscribe.btn{
+    @extend .btn;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+}
+#mc-embedded-subscribe.updates__form-submit{
+    margin: 0;
+    width: 200px;
+    @include phones{
+        width: 100%;
+    }
+}
+.mfp-iframe-holder .mfp-content {
+    width:300px;
+    min-height: 470px;
+ }
+ .mfp-iframe-scaler iframe{
+    background: transparent;
+    box-shadow: none;
+ }
+ .mfp-iframe-holder .mfp-close{
+        display: block;
+        cursor: pointer;
+        background: url('../img/close.png') no-repeat center;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        z-index: 1;
+    }

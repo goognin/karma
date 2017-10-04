@@ -18,6 +18,9 @@ html
         link(rel='icon', type='image/png', href='./assets/img/karma-logo-round.png')
         //- favicon block end
         link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css', rel='stylesheet', type='text/css')
+        //- style(type='text/css').
+        //-   #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
         link(rel='stylesheet' href='./assets/css/main.css')
         script(src='./assets/js/foundation.js' defer)
         script(src='./assets/js/app.min.js' defer)
@@ -44,9 +47,9 @@ html
                         .lang-switch__wrap        
                             a.lang-switch__link.active(href="#") ENG
                             .lang-switch__dropdown
-                                a.lang-switch__link(href="#") RU
-                                a.lang-switch__link(href="#") FR
-                                a.lang-switch__link(href="#") DE
+                                a.lang-switch__link(href="./ru") RU
+                                //- a.lang-switch__link(href="#") FR
+                                //- a.lang-switch__link(href="#") DE
 
             .main-content
                 section.hero
@@ -108,7 +111,7 @@ html
                                                 |10M
                                         .reach-counter__line-white                 
                                             .reach-counter__line-red(data-percent="50")
-                                //- a.hero__get-btn.btn(href="#") Contribute now
+                                a.hero__get-btn.btn(href="#") Contribute now
                             .hero__right-wrap#finish.hide
                                 .hero__reach-counter
                                         .reach-counter__title The token sale is Finished! Thanks everyone!
@@ -165,7 +168,7 @@ html
                             |can interchange directly to each other
                         .whatis__pic
                 section.interviews
-                        .interviews__title.base-title Interviews
+                        .interviews__title.base-title Interviews and Videos
                         .interviews__list-wrap
                             .interviews__list-arrow.arrow-prev
                                 include ../sections/_slider_arrow
@@ -173,8 +176,9 @@ html
                                 include ../sections/_slider_arrow
                             ul.interviews__list
                                 li.interviews__item
+                                    iframe#ytplayer(width='100%', height='100%', src='https://www.youtube.com/embed/1dDrdYJrdPM', frameborder='0', allowfullscreen='')
+                                li.interviews__item
                                     iframe#ytplayer(width='100%', height='100%', src='https://www.youtube.com/embed/e93qaZ81Of8', frameborder='0', allowfullscreen='')
-                                    //- a.interviews__item-link(href="#")
                                 li.interviews__item
                                     iframe(width='100%', height='100%', src='https://www.youtube.com/embed/GBhFBwOMYN0', frameborder='0', allowfullscreen='')  
                                 li.interviews__item
@@ -212,32 +216,33 @@ html
                                 .terms__top-item-text  $ 5,000,000
                             .terms__top-item 
                                 .terms__top-item-title Total token supply:
-                                .terms__top-item-text  100,000,000 KRM
+                                .terms__top-item-text  3,000,000 KRM
                             .terms__top-item 
                                 .terms__top-item-title Token type:
-                                .terms__top-item-text ERC20
+                                .terms__top-item-text Graphene
                             .terms__top-item 
                                 .terms__top-item-title Purchase methods accepted:
                                 .terms__top-item-text BTC, ETH, USD
                             .terms__top-item
-                                //- a.terms-btn.btn(href="") Get into the white list
+                                a.terms-btn.btn(href="#") Get into the white list
                         .terms__bottom 
                             .terms__bottom-item
                                 .terms__bottom-item-graph
                                     img(src="./assets/img/graph1.png", alt="graph")
                                 .terms__bottom-legend
                                     .terms__bottom-legend-desc
-                                        .percent.red 25% 
-                                        span of tokens retained by Karma
-                                    .terms__bottom-legend-desc
-                                        .percent.orange 25% 
-                                        span
-                                            | are incentives for 
+                                        .percent.red 59%  
+                                        span 
+                                            | for presale and token 
                                             br
-                                            |  the ecosystem members 
+                                            | sale participants 
                                     .terms__bottom-legend-desc
-                                        .percent.yellow 50% 
-                                        span for sale
+                                        .percent.orange 24% 
+                                        span
+                                            | future bounties reserve
+                                    .terms__bottom-legend-desc
+                                        .percent.yellow 17% 
+                                        span founders, 1-year vesting
                             .terms__bottom-item
                                 .terms__bottom-item-graph
                                     img(src="./assets/img/graph2.png", alt="graph")
@@ -250,7 +255,7 @@ html
                                         span until 3M raised  
                                     .terms__bottom-legend-desc 
                                         .percent.yellow 15% 
-                                        span until 6M raised
+                                        span until 8M raised
                             .terms__bottom-item
                                 .terms__bottom-safe
                                     .percent 100%
@@ -331,7 +336,7 @@ html
                                 .team__item-name George Goognin
                                 .team__item-position Founder, Evangelist
                                 .team__item-desc IT-career since 2002, first IT-startup made in 2008. Ex-Chief Operating Officer in ADV web-integrator, TOP3 in Russia. Clients: MOEX, VTB, X5 Retail. Co-founder of digital business school RIK (more than 1000 students completed the courses). 2013 to 2016 — large e-commerce automation (Apple, Samsung, LEGO, Nike). Ph.D in Economy Math Models
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.facebook.com/goognin" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/laptev.jpg", alt="laptev")
@@ -341,98 +346,92 @@ html
                                     | Since 2010 has managed private p2p-investment fund for SME. 
                                     br
                                     | Developed own scoring strategy with stable and positive results More than 10 years of experience in portfolio management in financial industry: Troika Dialog, Sberbank, Ancor Invest. International CFA-certified financial analyst. 
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.facebook.com/tema.laptev" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/boesing.jpg", alt="Boesing")
                                 .team__item-name Ronny Boesing
                                 .team__item-position Partner, Denmark
                                 .team__item-desc Founder of the World's First Decentralized Fintech Exchange OpenLedger, CoinsBank and OBITS. Official partner to multiple funds and exchanges in China. With his partner, Dan Larimer, Ronny is constantly developing the Graphene/BitShares ecosystem. Open Ledger is also a significant player at the global ICO promotion market.
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://cointelegraph.com/tags/ronny-boesing" target="_blank") CoinTelegraph
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/shlemov.jpg", alt="shlemov")
                                 .team__item-name Michael Shlemov
                                 .team__item-position Mentor
                                 .team__item-desc IT-career since 2002, first IT-startup made in 2008. Ex-Chief Operating Officer in ADV web-integrator, TOP3 in Russia. Clients: MOEX, VTB, X5 Retail. Co-founder of digital business school RIK (more than 1000 students completed the courses). 2013 to 2016 — large e-commerce automation (Apple, Samsung, LEGO, Nike). Ph.D in Economy Math Models
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/svinarchuk.jpg", alt="Svinarchuk")
                                 .team__item-name Dan Svinarchuk
                                 .team__item-position Fintech advisor
                                 .team__item-desc MOEX IT-infrastructure architect. Designed the core of the MOEX trading system, managed dev team. High-load expert: MOEX core supports 140,000 transactions per second. 
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.facebook.com/denn.nevera" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/itireleng.jpg", alt="Itireleng")
                                 .team__item-name Alakanani Itireleng
                                 .team__item-position Partner in Africa
                                 .team__item-desc PR Director at Humaniq. Runs SatoshiCentre, a blockchain hub in Africa, launching educational programs for children. Her journey with bitcoin started at 2012, and she is an international bitcoin influencer, having spoken at conferences in Amsterdam, South Africa, and Cote D'ivore.
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://twitter.com/bitcoinlady" target="_blank") Twitter
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/zubairov.jpg", alt="")
                                 .team__item-name Rustem Zubairov
                                 .team__item-position Consulting partner
                                 .team__item-desc Deloitte hits BIG4 for a decades. Rustem is a department director, took part in project of crypto-currencies legalization in Kazakhstan
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.linkedin.com/in/rustem-zubairov-aa625852/" target="_blank") LinkedIn
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/vakhitov.jpg", alt="vakhitov")
                                 .team__item-name Rustam Vakhitov
                                 .team__item-position Law partner, Netherlands
-                                .team__item-desc Department Director at International Tax Assosiates. Lives and works in Netherlands for 12 years. Expert in international law and taxes. Member of the international IFA Association. 
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                .team__item-desc Department Director at International Tax Assosiates. Lives and works in Netherlands for 12 years. Expert in international law and taxes. Member of the international IFA Association.
                             li.team__item
                                 .team__item-photo
-                                    img(src="./assets/img/team/asare.jpg", alt="asare")
+                                    img(src="./assets/img/team/chinyaev.jpg", alt="vakhitov")
+                                .team__item-name Alex Chinyaev
+                                .team__item-position Business partner, UK
+                                .team__item-desc UK Karma partner. Worked at Citi bank, RBC, PWC London. More than 15 years of investments and financial operations experience. Alex have UK Investment Management IMC certificate. 
+                            li.team__item
+                                .team__item-photo
+                                    img(src="./assets/img/team/asare.png", alt="asare")
                                 .team__item-name Philip Agyei Asare
                                 .team__item-position Business partner, UK
                                 .team__item-desc MOEX IT-infrastructure architect. Designed the core of the MOEX trading system, managed dev team. High-load expert: MOEX core supports 140,000 transactions per second. 
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://cointelegraph.com/news/philip-agyei-asare" target="_blank") CoinTelegraph
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/Schnellereich.jpg", alt="Schnellereich")
                                 .team__item-name Dima Schnellereich
                                 .team__item-position Blockchain advisor
                                 .team__item-desc PR Director at Humaniq. Runs SatoshiCentre, a blockchain hub in Africa, launching educational programs for children. Her journey with bitcoin started at 2012, and she is an international bitcoin influencer, having spoken at conferences in Amsterdam, South Africa, and Cote D'ivore.
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.facebook.com/schnellreich" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/bah.png", alt="bah")
                                 .team__item-name Thierno Madiou Bah
                                 .team__item-position  Partner in Sierra Leone, Africa
                                 .team__item-desc Deloitte hits BIG4 for a decades. Rustem is a department director, took part in project of crypto-currencies legalization in Kazakhstan
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook 
-                            li.team__item
-                                .team__item-photo
-                                    img(src="./assets/img/team/afrika.png", alt="afrika")
-                                .team__item-name Philip Agyei Asare
-                                .team__item-position  Partner in Ghana, Africa
-                                .team__item-desc Department Director at International Tax Assosiates. Lives and works in Netherlands for 12 years. Expert in international law and taxes. Member of the international IFA Association. 
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/kornilov.png", alt="kornilov")
                                 .team__item-name Tarlan Kornilov
                                 .team__item-position Law partner, Cyprus
                                 .team__item-desc Founder of the Elite Consulting law company. Specialisation: capital hedging, international financial deals, organisation of international corporate collaboration. Has an LLM Cambridge University degree, Strategic Negotiations Yale School of Management certificate
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/myshinsky.png", alt="myshinsky")
                                 .team__item-name Yuri Myshinsky
                                 .team__item-position Fund Relationships Executive
                                 .team__item-desc Director of the Government Development Corporation of the Chuvash Republic. Expertised in fundraising dozens of millions of dollars for the infrastructure, financial and IT-projects. 15 years of experience in Business Consulting, fintech, fund and government relationships.
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
                             li.team__item
                                 .team__item-photo
                                     img(src="./assets/img/team/boev.png", alt="boev")
                                 .team__item-name Evgeny Boev
                                 .team__item-position GR partner
                                 .team__item-desc Executive manager at the Russian Union of Industrialists and Entrepreneurs committee on International Partnership. 6 years at Central Bank of Russia, illegal money traffic monitoring. More than a 10 years of GR experience in project finance and public communications.
-                                //- a.team__item-btn(href="https://www.facebook.com/" target="_blank") Facebook
+                                a.team__item-btn(href="https://www.facebook.com/evgeny.boev.9" target="_blank") Facebook
                         button.team__showmore-btn Show more
 
                              
@@ -456,19 +455,6 @@ html
                                 .partners__item-logo 
                                     img(src="./assets/img/partners/openledger.png", alt="openledger")
                                 .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
-                            li.partners__item 
-                                .partners__item-logo 
-                                    img(src="./assets/img/partners/openledger.png", alt="openledger")
-                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
-                            li.partners__item 
-                                .partners__item-logo 
-                                    img(src="./assets/img/partners/bitshares.png", alt="bitshares")
-                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
-                            li.partners__item 
-                                .partners__item-logo 
-                                    img(src="./assets/img/partners/graphenelab.png", alt="graphenelab")
-                                .partners__item-text Ex Director of the Government Development Corporation of the Chuvash Republic.
-
 
 
                 section.press#press
@@ -538,14 +524,21 @@ html
                 section.updates
                     .container
                         .updates__title Get updates about Karma
-                        form.updates__form#updates__form
-                            input.updates__form-input(type="email" placeholder="Your email" required)
-                            button.updates__form-submit(type='submit') Get updates
+                        
+                        form#mc-embedded-subscribe-form.validate.updates__form(action='//red.us16.list-manage.com/subscribe/post?u=6fbc813d9fd3d1524d88d6451&id=6b53864ba3', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                            .updates__form-wrap
+                                .mc-field-group
+                                    input.updates__form-input.required.email(type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email")
+                                button#mc-embedded-subscribe.updates__form-submit(type='submit') Get updates
+                            #mce-responses.clear
+                                #mce-error-response.response(style='display:none')
+                                #mce-success-response.response(style='display:none')
                         .updates__text 
-                            | Filling the form above doesn't oblige you to anything. 
-                            br
+                            | Filling the form above doesn't oblige you to anything.
                             | We'll just add you to our mailing list.
+
                 include ../sections/_socials.pug
+                include ../sections/_white-list-form
             footer.footer
                 .container
                     .footer__left
@@ -559,7 +552,7 @@ html
                                 | Suite 1, 5 Percy Street, Fitzrovia, London, United Kingdom, W1T 1DG
                         .footer__photo
                             span.footer__photo-title Photo by: 
-                            a.footer__photo-link(href="#") Nathaniel Tetteh 
+                            a.footer__photo-link(href="https://unsplash.com/@nategreno" target="_blank") Nathaniel Tetteh 
                         .footer__copyright © Karma DAO, 2017 
 
                     .footer__right
@@ -569,3 +562,8 @@ html
                                 | Nothing contained in the Site constitutes investment, legal or tax advice. Neither the information nor any opinion contained in the Site constitutes a solicitation or an offer to buy or sell any securities, futures, options or other financial instruments. Decisions based on information contained on this site are the sole responsibility of the visitor.
                                 br
                                 | The materials in the Site are provided "AS IS" and without warranties of any kind (either express or implied). To the fullest extent permissible pursuant to applicable law, any and all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose, are disclaimed.
+            
+            //- mailchimp
+            //- script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+            //- script(type='text/javascript').
+            //-   (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='number';}(jQuery));var $mcj = jQuery.noConflict(true);

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="118px" viewBox="0 0 123 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Decentralized Roles</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.999,16.611 C0.999,25.365 8.098,32.462 16.852,32.462 C25.606,32.462 32.703,25.365 32.703,16.611 C32.703,7.854 25.606,0.757 16.852,0.757 C8.098,0.757 0.999,7.854 0.999,16.611 Z" id="path-1"></path>
+    </defs>
+    <g id="Web-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_Index_Karma_Web_1366px" transform="translate(-248.000000, -2259.000000)">
+            <g id="Token-Sale-Timeline" transform="translate(186.000000, 2114.000000)">
+                <g id="1" transform="translate(0.000000, 145.000000)">
+                    <g id="Decentralized-Roles" transform="translate(63.000000, 0.000000)">
+                        <g id="Group-10" transform="translate(28.000000, 18.000000)" stroke="#000000" opacity="0.300441576">
+                            <path d="M40,9 L66.5,34.481" id="Stroke-4"></path>
+                            <path d="M38,67.5 L31.962,14.742" id="Stroke-6"></path>
+                            <path d="M76,0 L0,73" id="Stroke-8"></path>
+                        </g>
+                        <g id="Group-13" transform="translate(89.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Clip-12" fill="#E62B1E" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Group-42" transform="translate(0.000000, 7.000000)">
+                            <path d="M31.7041,94.6099 C31.7041,103.3649 24.6071,110.4619 15.8521,110.4619 C7.0981,110.4619 0.0001,103.3649 0.0001,94.6099 C0.0001,85.8559 7.0981,78.7579 15.8521,78.7579 C24.6071,78.7579 31.7041,85.8559 31.7041,94.6099 Z" id="Stroke-14" stroke="#000000"></path>
+                            <path d="M64.5,16.7578 C64.5,12.7578 60.357,10.7578 59.321,9.7578 C58.286,8.7578 60.357,6.7578 60.357,4.7578 C60.357,1.7578 59.321,0.7578 57.25,0.7578 C55.179,0.7578 54.143,1.7578 54.143,4.7578 C54.143,6.7578 56.214,8.7578 55.179,9.7578 C54.143,10.7578 50,12.7578 50,16.7578" id="Stroke-18" stroke="#DD1318"></path>
+                            <path d="M113.5,63.7578 C113.5,59.7578 109.357,57.7578 108.321,56.7578 C107.286,55.7578 109.357,53.7578 109.357,51.7578 C109.357,48.7578 108.321,47.7578 106.25,47.7578 C104.179,47.7578 103.143,48.7578 103.143,51.7578 C103.143,53.7578 105.214,55.7578 104.179,56.7578 C103.143,57.7578 99,59.7578 99,63.7578" id="Stroke-20" stroke="#DD1318"></path>
+                            <path d="M73.5,101.7578 C73.5,97.7578 69.357,95.7578 68.321,94.7578 C67.286,93.7578 69.357,91.7578 69.357,89.7578 C69.357,86.7578 68.321,85.7578 66.25,85.7578 C64.179,85.7578 63.143,86.7578 63.143,89.7578 C63.143,91.7578 65.214,93.7578 64.179,94.7578 C63.143,95.7578 59,97.7578 59,101.7578" id="Stroke-22" stroke="#DD1318"></path>
+                            <path d="M15.75,102.5 L15.75,88.182" id="Stroke-24" stroke="#DD1318"></path>
+                            <polyline id="Stroke-26" stroke="#DD1318" points="27 95.3408 22.909 88.1818 8.36 88.1818 4.5 95.3408"></polyline>
+                            <path d="M27,95.3408 L18.818,95.3408 C18.818,95.3408 19.841,99.4318 22.909,99.4318 C25.977,99.4318 27,95.3408 27,95.3408 Z" id="Stroke-28" stroke="#DD1318" stroke-linejoin="round"></path>
+                            <path d="M12.6816,95.3408 L4.4996,95.3408 C4.4996,95.3408 5.5226,99.4318 8.5906,99.4318 C11.6596,99.4318 12.6816,95.3408 12.6816,95.3408 Z" id="Stroke-30" stroke="#DD1318" stroke-linejoin="round"></path>
+                            <path d="M8.5908,88.1816 L12.6818,95.3406" id="Stroke-32" stroke="#DD1318"></path>
+                            <path d="M22.9092,88.1816 L18.8182,95.3406" id="Stroke-34" stroke="#DD1318"></path>
+                            <path d="M19.8408,102.5 L11.6588,102.5" id="Stroke-36" stroke="#DD1318"></path>
+                            <path d="M106,8.5 L95.5,8.5 C95.5,8.5 97.75,0.5 105.75,0.5" id="Stroke-38" stroke="#FFFFFF" stroke-linejoin="bevel"></path>
+                            <path d="M105.75,0.5 C113.75,0.5 116,8.5 116,8.5 L106,8.5 L106,17.75 C106,18.716 105.216,19.5 104.25,19.5 C103.284,19.5 102.5,18.716 102.5,17.75 L102.5,17" id="Stroke-40" stroke="#FFFFFF" stroke-linejoin="bevel"></path>
+                        </g>
+                        <g id="Page-1" transform="translate(3.000000, 45.000000)" stroke="#DD1318">
+                            <polyline id="Stroke-1" points="0.3634 17.2832 7.9234 9.2832 11.7034 12.7832 19.8034 2.2832 23.5834 5.7832 27.3634 0.2832"></polyline>
+                            <g id="Group-5" transform="translate(5.000000, 18.283200)">
+                                <path d="M0,0.5 L18,0.5" id="Stroke-3"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
