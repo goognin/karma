@@ -1,0 +1,102 @@
+.timeline{
+	margin: 120px 0;
+	@include tablet{
+		margin: 60px 0;
+	}
+	&__title{
+		margin-bottom: 50px;
+	}
+	&__list{
+		display: flex;
+		counter-reset: timeline;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			top: 22px;
+			left: 25%;
+			background-color: rgba(#090E16,.3);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			height: 39px;
+			width: 20px;
+			background: url('../img/timeline_arrow.png') no-repeat center;
+			background-size: contain;
+			right: 0;
+			top: 4px;
+		}
+		@include tablet{
+			display: block;
+			&:before,&:after{
+				display: none;
+			}
+		}
+	}
+	&__item{
+		width: 25%;
+		position: relative;
+		&:before{
+			counter-increment: timeline;
+			content: counter(timeline);
+			font-size: 24px;
+			font-weight: 500;
+			color: #fff;
+			background-color: $red;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			position: relative;
+			z-index: 3;
+			margin-bottom: 20px;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 21px;
+			background-color: $red;
+			height: 3px;
+			width: 100%;
+		}
+		&:last-child:after{
+			display: none;
+		}
+		@include tablet{
+			width: auto;
+			display: flex;
+			margin-bottom: 30px;
+			&:before{
+				margin-right: 14px;
+			}
+			&:after{
+				width: 3px;
+				height: 100%;
+				top: 30px;
+				left: 21px;
+			}
+		}
+		&-title{
+			font-size: 24px;
+			line-height: 25px;
+			color: #090E16;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		&-text{
+			color: #090E16;
+			font-weight: 500;
+			line-height: 22px;
+			font-size: 14px;
+			opacity: .75;
+			max-width: 180px;
+		}
+	}
+
+}

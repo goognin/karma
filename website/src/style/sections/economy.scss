@@ -1,0 +1,54 @@
+.economy{
+	color: $black;
+	padding: 120px 0;
+	@include phones{
+		padding: 60px 0;
+	}
+	&__title{
+		margin-bottom: 18px;
+		text-align: center;
+	}
+	&__mission{
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 60px;
+		&-title{
+			color: $red;
+		}		
+	}
+	&__list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		@include tablet{
+			display: block;
+		}
+	}
+	&__item{
+		width: 303px;
+		&:before{
+			content: '';
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: $red;
+			margin-bottom: 20px;
+		}
+		@include tablet{
+			margin-bottom: 20px;
+			width: auto;
+		}
+		&-title{
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			min-height: 102px;
+		}
+		&-text{
+			font-size: 14px;
+		    line-height: 25px;
+		    font-weight: 300;
+		}
+	}
+}

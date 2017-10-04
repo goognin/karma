@@ -1,0 +1,152 @@
+.press{
+	margin: 120px 0;
+	@include tablet{
+		margin: 60px 0 80px;
+	}
+	&__title{
+		margin-bottom: 60px;
+	}
+	&__list{
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+	&__item{
+		width: 16%;
+		margin-bottom: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include tablet{
+			width: 50%;
+			margin-bottom: 30px;
+		}
+		// &-link{
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	display: block;
+		// }
+		&-logo{
+			width: 100%;
+			max-width: 140px;
+			object-fit: contain;
+		}
+	}
+	
+	&__slider{
+		padding: 0 120px;
+		@include desktop{
+			padding: 0 60px;
+		}
+		@include laptop{
+			padding: 0 30px;
+		}
+		&-wrap{
+			position: relative;
+		}
+		&-arrow{
+			width: 36px;
+			height: 90px;
+			cursor: pointer;
+			position: absolute;
+			// background: url('../img/arrow_svg.svg') center no-repeat;
+			// background-size: cover;
+			z-index: 10;
+			top: 50%;
+			left: 100%;
+			transform: translate(0,-50%)  rotate(-180deg);
+			&.arrow-prev{
+				left: -36px;
+				transform: translate(0,-50%);
+			}
+			&:hover{
+				svg g g{
+					stroke: $black;
+				} 
+			}
+			@include tablet{
+				display: none!important;
+			}
+		}
+		&-item{
+			position: relative;
+			padding: 0 30px;
+			font-weight: 500;
+			&-text{
+				margin-bottom: 30px;
+				font-size: 24px;
+				text-align: center;
+				position: relative;
+				&:before,&:after{
+				content: '';
+				width: 31px;
+				position: absolute;
+				height: 50px;
+				display: block;
+				transform: translate(0,-50%);
+				background: url('../img/quote.svg') no-repeat center;
+				background-size: contain;
+				background-position: center;
+				}
+				&:before{
+					top: 50%;
+					left: -30px;
+				}
+				&:after{
+					top: 50%;
+					right: -30px;
+					transform:  translate(0,-50%) rotate(-180deg);
+				}
+				
+			}
+			&-logo{
+				img{
+				    margin: 0 auto;
+				}
+			}
+		}
+		@include tablet{
+			padding: 0;
+		}
+		&-dots{
+			position: absolute;
+			left: 50%;
+			bottom: -40px;
+			transform: translate(-50%,0);
+			.slick-dots{
+				display: flex;
+				align-items:center;
+				list-style: none;
+				li{
+					margin-right: 15px;
+					&.slick-active{
+						.press__slider-dot{
+							background-color: transparent;
+							border: 2px solid $red;
+							width: 18px;
+							height: 18px;
+						}
+					}
+				}
+			}
+		}
+		&-dot{
+			display: block;
+			width: 4px;
+			height: 4px;
+			cursor: pointer;
+			background-color: rgba($red,.5);
+			border-radius: 50%;
+			overflow: hidden;
+			transition: all .3s ease;
+			&:hover{
+				width: 9px;
+				height: 9px;
+				background-color: #090E16;
+			}
+		}
+
+	}
+}

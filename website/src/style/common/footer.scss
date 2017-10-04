@@ -1,0 +1,56 @@
+.footer{
+	background-color: #090E16;
+	padding: 55px 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 300;
+	.container{
+		display: flex;
+		justify-content: space-between;
+		@include tablet{
+			display: block;
+		}
+	}    
+	&__left{
+		width: 40%;
+		@include tablet{
+			width: 100%;
+		}
+	}
+	&__adress{
+		margin-bottom: 30px;
+		&-title{
+			font-weight: 500;
+		}
+		&-text{
+			color: #A1A9B8;
+		}
+	}
+	&__photo{
+		margin-bottom: 30px;
+		font-weight: 500;
+		&-link{
+			color: $red;
+			text-decoration: none;
+		}
+	}
+	&__copyright{
+		font-weight: 500;
+	}
+	&__right{
+		width: 60%;
+		@include tablet{
+			width: 100%;
+		}
+	}
+	&__disclaimer{
+		&-title{
+			margin-bottom: 10px;
+			font-weight: 500;
+		}
+		&-text{
+			color: #A1A9B8;
+		}
+	}
+}

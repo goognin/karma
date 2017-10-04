@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>twitter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.502604167">
+        <g id="01_Tokensale_Karma_Web_1366px" transform="translate(-212.000000, -10678.000000)" fill-rule="nonzero" fill="#090E16">
+            <g id="Contacts" transform="translate(203.000000, 10676.000000)">
+                <path d="M33,4.309 C32.117,4.701 31.168,4.965 30.172,5.084 C31.189,4.475 31.97,3.51 32.337,2.36 C31.386,2.924 30.332,3.334 29.21,3.555 C28.313,2.598 27.032,2 25.616,2 C22.437,2 20.101,4.966 20.819,8.045 C16.728,7.84 13.1,5.88 10.671,2.901 C9.381,5.114 10.002,8.009 12.194,9.475 C11.388,9.449 10.628,9.228 9.965,8.859 C9.911,11.14 11.546,13.274 13.914,13.749 C13.221,13.937 12.462,13.981 11.69,13.833 C12.316,15.789 14.134,17.212 16.29,17.252 C14.22,18.875 11.612,19.6 9,19.292 C11.179,20.689 13.768,21.504 16.548,21.504 C25.69,21.504 30.855,13.783 30.543,6.858 C31.505,6.163 32.34,5.296 33,4.309 Z" id="twitter"></path>
+            </g>
+        </g>
+    </g>
+</svg>

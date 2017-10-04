@@ -1,0 +1,48 @@
+//mixins
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+//adaptive mixins
+@mixin widescreen() {
+  @media screen and (min-width: 1800px) {
+    @content;
+  }
+}
+@mixin notebook() {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin laptop{
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin tablet{
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin phones{
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin phones-sm{
+  @media (max-width: 350px) {
+    @content;
+  }
+}

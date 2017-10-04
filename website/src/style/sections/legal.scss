@@ -1,0 +1,190 @@
+.legal{
+	background-color: rgba(#000,.05);
+	padding: 80px 0;
+	// font-size: 14px;
+	&__title{
+		margin-bottom: 20px;
+	}
+	&__desc{
+		margin-bottom: 60px;
+		font-size: 24px;
+		font-weight: 500;
+		color: $red;
+		text-align: center;
+	}
+	&__pic{
+		display: block;
+		height: 300px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+		@include phones{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__bottom-text{
+		display: flex;
+		justify-content: space-between;
+		@include tablet{
+			display: block;
+		}
+	}
+	&__left,&__right{
+		width: 48%;
+		font-size: 14px;
+		color: $black;
+		line-height: 25px;
+		@include tablet{
+			width: auto;
+		}
+	}
+}
+.legal-page{
+	padding: 90px 0;
+	.container{
+		padding: 0 140px;
+		@include tablet{
+			padding: 0 40px;
+		}
+		@include phones{
+			padding: 0 20px;
+		}
+	}
+	h1{
+		text-align: center;
+		font-size: 60px;
+	}
+	h2{
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 40px 0 20px;
+		@include phones{
+			text-align: left;
+		}
+	}
+	h3{
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	p{
+		font-size: 14px;
+		line-height: 25px;
+		font-weight: 300;
+	}
+	a{
+		color: $red;
+		text-decoration: none;
+		font-weight: 500;
+	}
+	.red{
+		color: $red;
+	}
+	table{
+		width: 100%;
+		font-size: 14px;
+		font-weight: 300;
+		border-collapse: collapse;
+		margin-bottom: 40px;
+		thead{
+			@include phones{
+				display: none;
+			}
+		}
+		th{
+			text-align: left;
+			opacity: .5;
+			color: #212A3A;
+			font-weight: 300;
+		}
+		tbody{
+			tr{
+				&:nth-child(2n-1){
+					background-color: #F2F2F2;
+				}
+			}
+		}		
+		td,th{
+			height: 34px;
+			padding-left: 12px;
+			@include phones{
+				display: block;
+				padding: 10px 12px 0;
+				height: auto;
+				&:last-child{
+					margin-bottom: 10px;
+				}
+				&:before{
+					content: attr(data-th);
+					display: block;
+					text-align: left;
+					opacity: .5;
+					color: #212A3A;
+					font-weight: 300;
+				}
+			}
+		}
+		// tr{
+		// 	@include phones{
+		// 		display: block;
+
+		// 	}
+		// }
+	}
+	.quote{
+		margin: 60px 0 40px;
+		position: relative;
+		font-size: 24px;
+		text-align: center;
+		&:before,&:after{
+		content: '';
+		width: 31px;
+		position: absolute;
+		height: 50px;
+		display: block;
+		top: 50%;
+		transform: translate(0,-50%);
+		background: url('../img/quote.svg') no-repeat center;
+		background-size: contain;
+		background-position: center;
+		}
+		&:before{
+			left: -40px;
+			// top: 0;
+			@include tablet{
+				left: -20px;
+				top: -20px;
+				transform: translate(0,-50%);
+			}
+		}
+		&:after{
+			right: -30px;
+			// bottom: 0;
+			transform: translate(0,-50%) rotate(-180deg);
+			@include tablet{
+				right: 0;
+				bottom: -20px;
+			}
+		}
+	}
+	ul{
+		margin-top: 50px;
+		padding-left: 40px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 25px;
+
+	}
+	ol{
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 25px;
+	}
+	li{
+		color: $red;
+		span{
+			color: $black;
+		}
+	}
+	
+}

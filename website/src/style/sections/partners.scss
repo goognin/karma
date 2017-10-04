@@ -1,0 +1,54 @@
+.partners{
+	margin-top: 120px;
+	@include phones{
+		margin-top: 60px;
+	}
+	&__title{
+		margin-bottom: 40px;
+	}
+	&__list{
+		list-style: none;
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__item{
+		width: 230px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		&-logo{
+			width: 210px;
+			height: 110px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			img{
+				height: 100%;
+			    width: 100%;
+			    object-fit: contain;
+			}
+		}
+		&-text{
+			font-size: 14px;
+			line-height: 25px;
+			color: $black;
+		}
+		@include laptop{
+			margin: 0 auto;
+			margin-bottom: 40px;
+			&:nth-child(4n){
+				margin-right: auto;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		@include tablet{
+			width: auto;
+			text-align: center;
+		}
+	}
+}

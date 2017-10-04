@@ -1,0 +1,47 @@
+.socials{
+	padding: 22px 0;
+	@include laptop{
+		padding: 22px 0 0;
+	}
+	&__list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		@include laptop{
+			flex-wrap:wrap;
+		}
+	}
+	&__item{
+		@include laptop{
+			width: 33%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+	&__link{
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		&-text{
+			color: $gray;
+			font-size: 12px;
+			opacity: .5;
+		}
+		svg{
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			width: 24px;
+			height: 24px;
+		}
+		&:hover{
+			.socials__link-text{
+				color: $red;
+			}
+			svg g{
+				fill: $red;
+				opacity: 1;
+			}
+		}
+	}
+}

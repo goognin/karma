@@ -1,0 +1,127 @@
+- var title = 'Karma. Economy Of Trust' 
+mixin svg (className, fileName)
+    svg(class=className)
+        use(xlink:href=`/assets/img/sprite.svg#${fileName}`)
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        //- link(rel='icon', type='image/png', href='assets/img/favicon/favicon-32x32.png', sizes='32x32')
+        //- link(rel='icon', type='image/png', href='assets/img/favicon/favicon-16x16.png', sizes='16x16')        
+        meta(name='theme-color', content='#ffffff')
+        meta(property='og:description', content='Blockchain p2p-interchange protocol. Crossborder p2p-lending and resource interchange')
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        //- favicon block start
+        link(rel='icon', type='image/png', href='./assets/img/karma-logo-round.png')
+        //- favicon block end
+        link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(rel='stylesheet' href='./assets/css/main.css')
+        script(src='./assets/js/foundation.js' defer)
+        script(src='./assets/js/app.min.js' defer)
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body        
+        .wrapper
+            header.header.black
+                .container
+                    a.header__logo(href="/")
+                    .header__mobile
+                        a.burger(href="#")
+                            span
+                            span
+                            span
+                    .header__wrap
+                        nav.header__nav
+                            a.header__nav-link(href="#papers") Papers
+                            a.header__nav-link(href="#whatis") What is Karma
+                            a.header__nav-link(href="#alpha") Alpha
+                            a.header__nav-link(href="#team")  Team
+                            a.header__nav-link(href="#press") Press
+                        .lang-switch__wrap        
+                            a.lang-switch__link.active(href="#") ENG
+                            .lang-switch__dropdown
+                                a.lang-switch__link(href="#") RU
+                                a.lang-switch__link(href="#") FR
+                                a.lang-switch__link(href="#") DE
+
+            .main-content
+                section.legal-page
+                    .container
+                        h1 Legal H1
+                        p “Why does anyone want a vasectomy reversal?” This is a question I hear any time I tell someone what I do for a living. I perform microsurgical vasectomy reversals I tell them. “Hmm” they say. “And so what else do you do?” “That’s it I explain. Just vasectomy reversals. One a day, every day. On men from every state in the US and from around the world.” “Hmm. That’s nice,” they respond…and then we get to the big question “Why does anyone want a Vasectomy Reversal (http://www.dadsagain.com/), anyway?”
+                        h2 H2 Collection of Information:
+                        p 
+                            | Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several 
+                            a(href="#") different reasons. 
+                        p How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.   Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.  Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+                        p Having been on both sides of the technical interview table, I’d like to share some tips for those being interviewed. In doing so, I’ll share some of the more memorable interviews I’ve been involved in.
+                        p No good interviewer expects you to know everything. The problem is, you’re not always going to be interviewed by someone who’s good at it.   Sometimes, the person who’s giving you a technical interview was asked to do it about ten minutes before you showed up.  Maybe they’ve never interviewed anyone before, or maybe they’re just in a bad mood.  I’ve heard of technical interviewers where the interviewer derided an answer, and that’s totally unprofessional. I’ve had many a job candidate give a bad answer to a question, and my only response was silence followed by moving on to the next question. If your interviewer mocks any of your answers, you didn’t want to work there anyway. 
+                        p None of us know everything.  If you’re asked a question you just don’t know the answer to, don’t try to BS your way past it.  This is a good opportunity to tell the interviewer how you would research that particular question. It’s not about knowing everything, it’s about being able to find out anything. 
+                        h2 H2 Use of Information Collected:
+                        h3.red H3 Name of the table
+                        table
+                            thead
+                                tr
+                                    th Label of table
+                                
+                                    th Label of table 2
+                                
+                                    th Label of table 3
+                            tbody
+                                tr
+                                    td(data-th="Label of table") Stroke 1 
+                                    td(data-th="Label of table 2") Stroke 1 Row 2
+                                    td(data-th="Label of table 3") Stroke 1 Row 3
+                                tr
+                                    td(data-th="Label of table") Stroke 2
+                                    td(data-th="Label of table 2") Stroke 2 Row 2
+                                    td(data-th="Label of table 3") Stroke 2 Row 3
+                                tr
+                                    td(data-th="Label of table") Stroke 3
+                                    td(data-th="Label of table 2") Stroke 3 Row 2
+                                    td(data-th="Label of table 3") Stroke 3 Row 3
+                                tr
+                                    td(data-th="Label of table") Stroke 4
+                                    td(data-th="Label of table 2") Stroke 4 Row 2
+                                    td(data-th="Label of table 3") Stroke 4 Row 3
+                                tr
+                                    td(data-th="Label of table") Stroke 5
+                                    td(data-th="Label of table 2") Stroke 5 Row 2
+                                    td(data-th="Label of table 3") Stroke 5 Row 3
+                        h2 Children Under Age of 13:
+                        p How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.   Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.  Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+                        .quote EZ Texting has been very easy to work with...we had chosen another company and then found out they were having massive technical difficulties.
+                        p How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.   Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.  Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+                        h2 Unsubscribe or Opt-Out:
+                        p How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.   Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.  Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+                        ul
+                            li 
+                                span How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.
+                            li 
+                                span Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.
+                            li 
+                                span Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+                        h3.red NUMBERED LIST
+                        ol
+                            li 
+                                span How many people will be asking questions? From experience I can tell you there’s nothing like walking into a room and seeing nine people on the other side of the table.
+                            li 
+                                span Second, what will you be asked? You’ll sometimes hear people say the questions they were asked in a technical interview were “easy”, which translated means “they asked me stuff I happened to know”.
+                            li 
+                                span Sometimes you’ll hear people say the questions were “hard”, which translated means “they asked me stuff I didn’t know”, or “they asked me about stuff I’ve never even heard of”. 
+
+
+
+
+
+
+
+
+
+
+
+
