@@ -135,7 +135,7 @@ contract Karma is SafeMath, StandardToken {
     }
 
     function setEthPrice(uint _etherPrice) onlyOwner {
-        oneTokenInWei = 1 ether / _etherPrice / 100;
+        oneTokenInWei = _etherPrice;
     }
 
 }
