@@ -1,6 +1,6 @@
 # Karma. Cross-border p2p-lending ecosystem
 ## dapp
-Decentralized blockchain application based on Graphene/BitShares.
+Decentralized blockchain p2p-lending application.
 
 ## presale
 ERC20 presale token generator and multisig storage. 
